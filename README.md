@@ -26,3 +26,8 @@ The <form> element can contain one or more of the following form elements:
 <fieldset>
 <label>
 <output>
+
+The <script> tag is used to define a client-side script (JavaScript).
+
+
+## Selenium

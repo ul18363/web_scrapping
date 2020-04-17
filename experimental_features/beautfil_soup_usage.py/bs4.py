@@ -2,6 +2,11 @@
 
 """
     Library for extracting data from XML or HTML files
+    
+    The parsers are not included in the library so installing the lxml package 
+    seems necessary.
+    
+    conda install lxml
 """
 from bs4 import BeautifulSoup
 import urllib3 as urllib
