@@ -45,4 +45,72 @@ The <form> element can contain one or more of the following form elements:
 The <script> tag is used to define a client-side script (JavaScript).
 
 ## Selenium
+Seleniums is 
+
+# Sites:
+
+https://www.rightmove.co.uk/property-for-sale/search.html?
+    searchLocation=SW1P&
+    useLocationIdentifier=false&
+    locationIdentifier=&
+    radius=0.0&
+    displayPropertyType=&
+    minBedrooms=&
+    minPrice=&
+    maxPrice=&
+    maxDaysSinceAdded=&
+    buy.x=SALE&
+    search=Start+Search
+
+radius=0.25 #is for quarter mile options= [0.0,0.25,0.5,1,3,5,10,15,20,30,40]
+
+https://www.rightmove.co.uk/property-for-sale/find.html?
+    searchType=SALE&
+    locationIdentifier=OUTCODE%5E2509&
+    insId=2&
+    radius=0.0&
+    minPrice=&
+    maxPrice=&
+    minBedrooms=&
+    maxBedrooms=&
+    displayPropertyType=&
+    maxDaysSinceAdded=&
+    _includeSSTC=on&
+    sortByPriceDescending=&
+    primaryDisplayPropertyType=&
+    secondaryDisplayPropertyType=&
+    oldDisplayPropertyType=&
+    oldPrimaryDisplayPropertyType=&
+    newHome=&
+    index=24&
+    auction=false
+    
+Addiding index here also work (originally wasn't there)
+    If index is greater than the number of results the value is ommited in the search (aka index is set to 0)
+    If index is +-12 places from i*24 page i will appear
+
+locationIdentifier: Amazingly the outer postcode area is represented by a number 1 or bigger.
+
+    AB10 ->1
+    AB10 1AF -> 000001
+    AB11 ->2
+    SW1P -> 2509
+    SW1P 2NR ->837742
+ # Probably ZE3->2921 is the last one
+
+https://www.rightmove.co.uk/property-for-sale/find.html?
+    locationIdentifier=OUTCODE%5E2509&
+    index=24&
+    propertyTypes=&
+    includeSSTC=false&
+    mustHave=&
+    dontShow=&
+    furnishTypes=&
+    keywords=
+    
+    
+renturl:
+    https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=OUTCODE%5E2509&sortType=1&propertyTypes=&includeLetAgreed=false&mustHave=&dontShow=&furnishTypes=&keywords=
+can be WAAAY simplified!
+https://www.rightmove.co.uk/property-to-rent/find.html?index=0&locationIdentifier=OUTCODE%5E18
 
