@@ -3,7 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 *"*
+<<<<<<< HEAD
 *outcome*
+=======
+>>>>>>> first_commit
 # C extensions
 *.so
 
